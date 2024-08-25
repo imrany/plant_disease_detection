@@ -23,7 +23,7 @@ data_transforms = {
     ]),
 }
 
-data_dir = 'path_to_data'  # Replace with your dataset path
+data_dir = '../datasets'  # Replace with your dataset path
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
